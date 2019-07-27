@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    
+    <style>
+        html{
+            height: 100%;
+        }
+        body {
+            padding: 0;
+            margin: 0;
+            background: url("images/01.jpg") no-repeat;
+            background-size: 100% 100%;
+            position: absolute;
+        }
+        .for_center {
+            display: flex; align-items: center; justify-content: center; flex-direction: column;
+        }
+    </style>
+   
+
+</head>
+<body>
+
+<div class="" style="width:100vw; display: flex; align-items: center; justify-content: center">
+
+
+    <div style="background: aliceblue; height: 100vh; width: 50vw" >
+
+        <div id="image_top" style="height:50%;" class="for_center">
+            <img src="images/02.png" alt="" style="width: 250px; display: inline-block">
+            <p>Hello world!</p>
+        </div>
+
+        <div style="height: 50%">
+            <form action="login" style="height: 100%" class="for_center">
+                <input type="text" onclick="textBlur()" name="name" value="text">
+                <input type="password" name="password" value="123">
+                <input type="submit" value="提交">
+            </form>
+        </div>
+
+    </div>
+
+</div>
+
+<script>
+    function textBlur(){
+        console.log("text blur");
+    }
+</script>
+
+
+
+
+</body>
+</html>
